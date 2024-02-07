@@ -13,6 +13,7 @@ module.exports = {
       colors: {
         pink: "#ef1893",
         primary: "#511bc9",
+        green: "#41e296",
       },
     },
   },
