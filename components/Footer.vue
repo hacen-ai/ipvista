@@ -36,21 +36,21 @@
               <!--[-->
               <div class="grid gap-4">
                 <a
-                  href="/channels"
+                  href="#"
                   class="transition-[color,_transform] origin-left text-dark/80 text-lg font-normal focus-within:text-primary focus-within:scale-105 w-max hover:text-primary hover:scale-105"
                   >Channels list</a
                 >
               </div>
               <div class="grid gap-4">
                 <a
-                  href="/apps"
+                  href="#"
                   class="transition-[color,_transform] origin-left text-dark/80 text-lg font-normal focus-within:text-primary focus-within:scale-105 w-max hover:text-primary hover:scale-105"
                   >Apps</a
                 >
               </div>
               <div class="grid gap-4">
                 <a
-                  href="/dashboard/support"
+                  href="#"
                   class="transition-[color,_transform] origin-left text-dark/80 text-lg font-normal focus-within:text-primary focus-within:scale-105 w-max hover:text-primary hover:scale-105"
                   >Support</a
                 >
@@ -62,21 +62,21 @@
               <!--[-->
               <div class="grid gap-4">
                 <a
-                  href="/tos/terms-of-service"
+                  href="#"
                   class="transition-[color,_transform] origin-left text-dark/80 text-lg font-normal focus-within:text-primary focus-within:scale-105 w-max hover:text-primary hover:scale-105"
                   >Terms of Service</a
                 >
               </div>
               <div class="grid gap-4">
                 <a
-                  href="/tos/privacy-policy"
+                  href="#"
                   class="transition-[color,_transform] origin-left text-dark/80 text-lg font-normal focus-within:text-primary focus-within:scale-105 w-max hover:text-primary hover:scale-105"
                   >Privacy Policy</a
                 >
               </div>
               <div class="grid gap-4">
                 <a
-                  href="/tos/dmca"
+                  href="#"
                   class="transition-[color,_transform] origin-left text-dark/80 text-lg font-normal focus-within:text-primary focus-within:scale-105 w-max hover:text-primary hover:scale-105"
                   >DMCA</a
                 >

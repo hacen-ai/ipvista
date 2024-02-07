@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-white border-b border-dark/10 sticky top-0 z-50">
+  <nav class="sticky top-0 z-50 bg-white border-b border-dark/10">
     <div
       class="[transition:_padding_.3s] container flex flex-wrap items-center max-w-[1240px] px-[20px] sm:px-4 py-[22px] md:py-[19px] justify-between mx-auto"
     >
@@ -18,7 +18,7 @@
             https://iptvfiesta.com/_ipx/s_354x70/img/logo.svg 1x,
             https://iptvfiesta.com/_ipx/s_354x70/img/logo.svg 2x
           "
-          class="h-6 mr-3 sm:h-9 object-left" /></a
+          class="object-left h-6 mr-3 sm:h-9" /></a
       ><button
         data-collapse-toggle="navbar-default"
         type="button"
@@ -52,7 +52,7 @@
             class="transition-transform focus-visible:scale-105 w-max hover:scale-105"
           >
             <a
-              href="/channels"
+              href="/"
               class="transition-[color] text-dark leading-[20px] focus-visible:text-primary hover:text-primary"
               >Channels List</a
             >
@@ -61,7 +61,7 @@
             class="transition-transform focus-visible:scale-105 w-max hover:scale-105"
           >
             <a
-              href="/apps"
+              href="/"
               class="transition-[color] text-dark leading-[20px] focus-visible:text-primary hover:text-primary"
               >Apps</a
             >
@@ -72,7 +72,7 @@
           class="grid gap-[35px] md:grid-flow-col pt-[25px] md:pt-0 md:pl-[25px] items-center"
         >
           <a
-            href="/dashboard"
+            href="/"
             class="transition-[color,_transform] focus-visible:scale-105 w-max hover:scale-105 text-dark leading-[20px] focus-visible:text-primary hover:text-primary"
             >Login</a
           >
@@ -80,7 +80,7 @@
             class="grid justify-items-center gap-[15px] !justify-items-start md:!justify-items-center"
           >
             <a
-              href="/checkout?preselected_pid=2"
+              href=""
               class="transition-[outline,_transform] bg-green py-[19px] px-8 rounded-full font-bold text-lg shadow-btn2 text-center focus-visible:outline-2 focus-visible:outline focus-visible:outline-offset-4 outline-green grid items-center focus-visible:scale-[1.02] hover:scale-[1.02] pt-[11px] pb-3 bg-pink text-white shadow-[0_4px_8px_0_rgba(239,24,147,.15)] outline-pink"
               >Get your 70% OFF</a
             ><!---->
