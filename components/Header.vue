@@ -18,30 +18,77 @@
             https://iptvfiesta.com/_ipx/s_354x70/img/logo.svg 1x,
             https://iptvfiesta.com/_ipx/s_354x70/img/logo.svg 2x
           "
-          class="object-left h-6 mr-3 sm:h-9" /></a
-      ><button
-        data-collapse-toggle="navbar-default"
-        type="button"
-        class="inline-flex items-center p-[6px] text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 ring-pink"
-        aria-controls="navbar-default"
-        aria-expanded="false"
-      >
-        <span class="sr-only">Open main menu</span
-        ><svg
-          class="w-6 h-6"
-          aria-hidden="true"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
+          class="object-left h-6 mr-3 sm:h-9"
+      /></a>
+      <Menu as="div" class="relative ml-3">
+        <MenuButton
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-[6px] text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 ring-pink"
+          aria-controls="navbar-default"
+          aria-expanded="false"
         >
-          <path
-            fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"
-            class="fill-pink"
-          ></path>
-        </svg>
-      </button>
+          <span class="sr-only">Open main menu</span
+          ><svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+              class="fill-green-500"
+            ></path>
+          </svg>
+        </MenuButton>
+
+        <transition
+          enter-active-class="transition ease-out duration-100"
+          enter-from-class="transform opacity-0 scale-95"
+          enter-to-class="transform opacity-100 scale-100"
+          leave-active-class="transition ease-in duration-75"
+          leave-from-class="transform opacity-100 scale-100"
+          leave-to-class="transform opacity-0 scale-95"
+        >
+          <MenuItems
+            class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+          >
+            <MenuItem v-slot="{ active }">
+              <a
+                href="#"
+                :class="[
+                  active ? 'bg-gray-100' : '',
+                  'block px-4 py-2 text-sm text-gray-700',
+                ]"
+                >Your Profile</a
+              >
+            </MenuItem>
+            <MenuItem v-slot="{ active }">
+              <a
+                href="#"
+                :class="[
+                  active ? 'bg-gray-100' : '',
+                  'block px-4 py-2 text-sm text-gray-700',
+                ]"
+                >Settings</a
+              >
+            </MenuItem>
+            <MenuItem v-slot="{ active }">
+              <a
+                href="#"
+                :class="[
+                  active ? 'bg-gray-100' : '',
+                  'block px-4 py-2 text-sm text-gray-700',
+                ]"
+                >Sign out</a
+              >
+            </MenuItem>
+          </MenuItems>
+        </transition>
+      </Menu>
       <div
         class="w-full md:w-auto grid grid-cols-1 gap-[25px] justify-start pt-5 mt-5 md:grid-flow-col items-center md:pt-0 md:mt-0 divide-y md:divide-y-0 md:divide-x divide-dark/10 hidden md:grid"
         id="navbar-default"
@@ -90,3 +137,15 @@
     </div>
   </nav>
 </template>
+
+<script setup>
+import {
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuItems,
+} from "@headlessui/vue";
+</script>

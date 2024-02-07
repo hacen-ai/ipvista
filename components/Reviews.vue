@@ -22,7 +22,9 @@
           :options="{
             rewind: true,
             perPage: 4,
+
             padding: 10,
+            autoplay: true,
             navigation: false,
             gap: 20,
             arrows: false,

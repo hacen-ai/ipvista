@@ -18,6 +18,11 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@splidejs/vue-splide": "^0.6.12"
+    "@headlessui/react": "^1.7.18",
+    "@headlessui/vue": "^1.7.19",
+    "@heroicons/react": "^2.1.1",
+    "@splidejs/vue-splide": "^0.6.12",
+    "nuxt-swiper": "^1.2.2",
+    "swiper": "^11.0.6"
   }
 }

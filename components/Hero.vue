@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="relative">
-      <div class="relative container mx-auto pt-7 px-[18px] text-center z-20">
+    <div class="relative group bg-[#F9F6FF]">
+      <div class="relative container mx-auto pt-12 px-[18px] text-center z-20">
         <img
           src="https://iptvfiesta.com/_ipx/s_128x128/img/website/4k.svg"
           width="128"

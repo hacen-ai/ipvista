@@ -9,6 +9,7 @@
     <Reviews />
     <Faqs />
     <JoinUs />
+    <!-- <Swiper /> -->
     <Footer />
   </div>
 </template>
