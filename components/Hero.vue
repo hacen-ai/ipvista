@@ -1,13 +1,18 @@
 <template>
   <div>
     <div class="relative group bg-[#F9F6FF]">
-      <div class="relative container mx-auto pt-12 px-[18px] text-center z-20">
+      <div
+        @mousemove="handleMouseMove"
+        class="relative container mx-auto pt-7 px-[18px] text-center z-20"
+      >
         <img
+          ref="image1"
           src="https://iptvfiesta.com/_ipx/s_128x128/img/website/4k.svg"
           width="128"
           height="128"
           alt="Parallax Image"
           data-nuxt-img=""
+          delay="200"
           srcset="
             https://iptvfiesta.com/_ipx/s_128x128/img/website/4k.svg 1x,
             https://iptvfiesta.com/_ipx/s_256x256/img/website/4k.svg 2x
@@ -22,6 +27,7 @@
             opacity: 1;
           "
         /><img
+          ref="image2"
           src="https://iptvfiesta.com/_ipx/s_204x84/img/website/multi-devices.svg"
           width="204"
           height="84"
@@ -42,6 +48,7 @@
             opacity: 1;
           "
         /><img
+          ref="image3"
           src="https://iptvfiesta.com/_ipx/s_222x84/img/website/9k-channels.svg"
           width="222"
           height="84"
@@ -62,6 +69,7 @@
             opacity: 1;
           "
         /><img
+          ref="image4"
           src="https://iptvfiesta.com/_ipx/s_128x128/img/website/live.svg"
           width="128"
           height="128"
@@ -127,7 +135,7 @@
           https://iptvfiesta.com/_ipx/w_2560/img/website/movies-bg.webp 2560w,
           https://iptvfiesta.com/_ipx/w_3072/img/website/movies-bg.webp 3072w
         "
-        class="absolute bottom-0 z-[-1] w-full"
+        class="absolute bottom-0 z-[10] w-full"
         style="transform: translateY(28%); opacity: 1"
       /><img
         src="https://iptvfiesta.com/_ipx/_/img/website/filter-pink.svg"
@@ -152,6 +160,39 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+
+let isMouseMovePending = false;
+
+// Refs for each image
+const image1 = ref(null);
+const image2 = ref(null);
+const image3 = ref(null);
+const image4 = ref(null);
+// Add more refs for other images if needed
+
+// Function to handle mouse move
+const handleMouseMove = (event) => {
+  if (!isMouseMovePending) {
+    isMouseMovePending = true;
+
+    requestAnimationFrame(() => {
+      const mouseX = event.clientX;
+      const mouseY = event.clientY;
+
+      // Adjust the translation based on mouse position
+      // You may need to adjust the values to get the desired effect
+      image1.value.style.transform = `translateX(${-mouseX / 50}px) translateY(${-mouseY / 50}px)`;
+      image2.value.style.transform = `translateX(${-mouseX / 50}px) translateY(${-mouseY / 50}px)`;
+      image3.value.style.transform = `translateX(${-mouseX / 50}px) translateY(${-mouseY / 50}px)`;
+      image4.value.style.transform = `translateX(${-mouseX / 50}px) translateY(${-mouseY / 50}px)`;
+      // Adjust for other images if needed
+
+      isMouseMovePending = false;
+    });
+  }
+};
+</script>
 
 <style lang="scss" scoped></style>
