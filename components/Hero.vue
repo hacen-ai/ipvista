@@ -123,6 +123,19 @@
         src="https://iptvfiesta.com/_ipx/w_3072/img/website/movies-bg.webp"
         alt="Background Images"
         data-nuxt-img=""
+        v-motion
+        :initial="{
+          y: 100,
+          opacity: 0,
+        }"
+        :visible="{
+          y: 0,
+          opacity: 1,
+          transition: {
+            delay: 200,
+            damping: 90,
+          },
+        }"
         sizes="(max-width: 320px) 100vw, (max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1280px) 100vw, 100vw"
         srcset="
           https://iptvfiesta.com/_ipx/w_320/img/website/movies-bg.webp   320w,
@@ -162,8 +175,11 @@
 
 <script setup>
 import { ref } from "vue";
+import { useMotions } from "@vueuse/motion";
 
 let isMouseMovePending = false;
+
+const { custom } = useMotions();
 
 // Refs for each image
 const image1 = ref(null);

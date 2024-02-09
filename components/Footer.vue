@@ -99,7 +99,7 @@
             aria-expanded="false"
             data-headlessui-state=""
           >
-            English
+            {{ selectedLang }}
             <img
               src="https://iptvfiesta.com/_ipx/s_24x24/img/arrow-bottom.svg"
               onerror="this.setAttribute('data-error', 1)"
@@ -110,15 +110,28 @@
               class="transition-transform ui-open:rotate-180"
             /></button
           ><!----><!--]--><!---->
-          <div v-show="show" class="">
+          <div v-if="show" class="transition-all w-full duration-500">
+            <button
+              class="w-full pt-[14px] flex items-center justify-between pb-[13px] pl-[22px] pr-[13px] text-left"
+              id="headlessui-popover-button-4561564"
+              type="button"
+              aria-expanded="false"
+              data-headlessui-state=""
+              @click="selectLanguageFunc('English')"
+            >
+              English
+              {{ selectedLang === "English" ? "✔" : "" }}
+            </button>
             <button
               class="w-full pt-[14px] pb-[13px] pl-[22px] pr-[13px] text-left"
               id="headlessui-popover-button-4561564"
               type="button"
               aria-expanded="false"
               data-headlessui-state=""
+              @click="selectLanguageFunc('Español')"
             >
               Español
+              {{ selectedLang === "Español" ? "✔" : "" }}
             </button>
             <button
               class="w-full pt-[14px] pb-[13px] pl-[22px] pr-[13px] text-left"
@@ -126,8 +139,10 @@
               type="button"
               aria-expanded="false"
               data-headlessui-state=""
+              @click="selectLanguageFunc('Português')"
             >
               Português
+              {{ selectedLang === "Português" ? "✔" : "" }}
             </button>
             <button
               class="w-full pt-[14px] pb-[13px] pl-[22px] pr-[13px] text-left"
@@ -135,8 +150,10 @@
               type="button"
               aria-expanded="false"
               data-headlessui-state=""
+              @click="selectLanguageFunc('Français')"
             >
               Français
+              {{ selectedLang === "Français" ? "✔" : "" }}
             </button>
             <button
               class="w-full pt-[14px] pb-[13px] pl-[22px] pr-[13px] text-left"
@@ -144,8 +161,10 @@
               type="button"
               aria-expanded="false"
               data-headlessui-state=""
+              @click="selectLanguageFunc('Italiano')"
             >
               Italiano
+              {{ selectedLang === "Italiano" ? "✔" : "" }}
             </button>
             <button
               class="w-full pt-[14px] pb-[13px] pl-[22px] pr-[13px] text-left"
@@ -153,8 +172,10 @@
               type="button"
               aria-expanded="false"
               data-headlessui-state=""
+              @click="selectLanguageFunc('Deutsch')"
             >
               Deutsch
+              {{ selectedLang === "Deutsch" ? "✔" : "" }}
             </button>
           </div>
         </div>
@@ -182,7 +203,26 @@
 </template>
 <script setup>
 import { ref } from "vue";
+const selectedLang = ref("English");
+
+const selectLanguageFunc = (value) => {
+  selectedLang.value = value;
+  // alert("Language changed to " + value);
+  show.value = false;
+};
 
 const show = ref(false);
 const toggle = () => (show.value = !show.value);
 </script>
+
+<style scoped>
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+</style>

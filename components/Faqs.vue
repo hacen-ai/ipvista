@@ -13,6 +13,19 @@
         <!--[-->
         <div v-for="(faq, idx) in faqs">
           <div
+            v-motion
+            :initial="{
+              y: 0,
+              opacity: 0,
+            }"
+            :visible="{
+              y: 0,
+              opacity: 1,
+              transition: {
+                delay: 300,
+                damping: 90,
+              },
+            }"
             data-headlessui-state=""
             :key="idx"
             class="transition-[outline] bg-white rounded-[10px] shadow-base overflow-hidden text-dark focus-within:outline focus-within:outline-2 focus-within:outline-primary group"

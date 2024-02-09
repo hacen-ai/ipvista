@@ -69,6 +69,19 @@
           />
           <div
             v-if="selected === 1"
+            v-motion
+            :initial="{
+              y: 0,
+              opacity: 0,
+            }"
+            :visible="{
+              y: 0,
+              opacity: 1,
+              transition: {
+                delay: 300,
+                damping: 90,
+              },
+            }"
             class="container mx-auto max-w-[1162px] p-[141px_21px_40px_31px] md:grid grid-cols-[49fr_53fr] gap-[83px] md:pt-[207px] md:pb-[74px] items-center"
           >
             <div class="md:pt-[5px]">
@@ -184,6 +197,19 @@
           </div>
           <div
             v-if="selected === 2"
+            v-motion
+            :initial="{
+              y: 0,
+              opacity: 0,
+            }"
+            :visible="{
+              y: 0,
+              opacity: 1,
+              transition: {
+                delay: 300,
+                damping: 90,
+              },
+            }"
             class="container mx-auto max-w-[1162px] p-[141px_21px_40px_31px] md:grid grid-cols-[54fr_42fr] gap-[133px] md:pt-[75px] md:pb-[34px] items-center"
           >
             <div class="md:pt-[72px]">
@@ -196,8 +222,8 @@
                 class="relative z-10 text-xl opacity-70 mb-[38px] md:mb-[30px] max-w-[515px]"
               >
                 Access our vast library of movies and TV shows from top studios
-                like Warner Bros.®, Disney®, Paramount®, and more, all available
-                to stream on-demand at your convenience.
+                like Warner Bros.®, Disney®, Paramount®, and more, all
+                available to stream on-demand at your convenience.
               </p>
               <img
                 src="https://iptvfiesta.com/_ipx/s_395x52/img/website/vod-channels.webp"
@@ -296,6 +322,19 @@
           </div>
           <div
             v-if="selected === 3"
+            v-motion
+            :initial="{
+              y: 0,
+              opacity: 0,
+            }"
+            :visible="{
+              y: 0,
+              opacity: 1,
+              transition: {
+                delay: 300,
+                damping: 90,
+              },
+            }"
             class="container mx-auto max-w-[1162px] p-[141px_21px_40px_31px] md:grid grid-cols-[51fr_53fr] gap-[56px] md:pt-[212px] md:pb-[104px] items-center"
           >
             <div>

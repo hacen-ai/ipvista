@@ -28,8 +28,8 @@
         >
           <!---->
           <div
-            @click="select(1)"
-            :class="{ 'border-green': selected === 1 }"
+            @click="setSelected(1)"
+            :class="{ 'border-green': planSelected === 1 }"
             class="relative transition-[box-shadow] rounded-[inherit] border-4 bg-white cursor-pointer pt-10 pb-[15px] px-[20px] h-full text-center grid content-between ui-checked:border-4 ui-checked:border-green ui-checked:shadow-advanced outline-none group-focus-visible:border-[6px] z-0"
             style="transform: scale(1) translateZ(0px)"
           >
@@ -60,17 +60,17 @@
         >
           <!---->
           <div
-            :class="{ 'border-green': selected === 2 }"
-            @click="select(2)"
+            :class="{ 'border-green': planSelected === 2 }"
+            @click="setSelected(2)"
             class="relative transition-[box-shadow] rounded-[inherit] border-4 bg-white cursor-pointer pt-10 pb-[15px] px-[20px] h-full text-center grid content-between ui-checked:border-4 ui-checked:border-green ui-checked:shadow-advanced outline-none group-focus-visible:border-[6px] z-0"
             style="transform: scale(1) translateZ(0px)"
           >
             <div
               :class="{
-                'border-green': selected === 2,
-                'bg-white': selected !== 2,
-                'bg-green': selected === 2,
-                'text-white': selected === 2,
+                'border-green': planSelected === 2,
+                'bg-white': planSelected !== 2,
+                'bg-green': planSelected === 2,
+                'text-white': planSelected === 2,
               }"
               class="absolute shadow border transition-[box-shadow,_color,_background] box left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full py-[6px] w-[174px] text-lg font-medium text-dark ui-checked:bg-green ui-checked:text-white ui-checked:border-0"
             >
@@ -104,17 +104,17 @@
         >
           <!---->
           <div
-            @click="select(3)"
-            :class="{ 'border-green': selected === 3 }"
+            @click="setSelected(3)"
+            :class="{ 'border-green': planSelected === 3 }"
             class="relative transition-[box-shadow] rounded-[inherit] border-4 bg-white cursor-pointer pt-10 pb-[15px] px-[20px] h-full text-center grid content-between ui-checked:border-4 ui-checked:border-green ui-checked:shadow-advanced outline-none group-focus-visible:border-[6px] z-0"
             style="transform: scale(1) translateZ(0px)"
           >
             <div
               :class="{
-                'border-green': selected === 3,
-                'bg-white': selected !== 3,
-                'bg-green': selected === 3,
-                'text-white': selected === 3,
+                'border-green': planSelected === 3,
+                'bg-white': planSelected !== 3,
+                'bg-green': planSelected === 3,
+                'text-white': planSelected === 3,
               }"
               class="absolute shadow border transition-[box-shadow,_color,_background] box left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full py-[6px] w-[174px] text-lg font-medium text-dark ui-checked:bg-green ui-checked:text-white ui-checked:border-0"
             >
@@ -143,9 +143,11 @@
 
 <script setup>
 import { ref } from "vue";
-const selected = ref(1);
+const planSelected = ref(1);
 
-const select = (index) => {
-  selected.value = index;
+const setSelected = (index) => {
+  planSelected.value = index;
+  console.log(planSelected.value);
+  localStorage.setItem("planSelected", planSelected.value);
 };
 </script>

@@ -17,6 +17,18 @@
       >
         <!--[-->
         <li
+          v-motion
+          :initial="{
+            opacity: 0,
+          }"
+          :visible="{
+            y: 0,
+            opacity: 1,
+            transition: {
+              delay: 200,
+              damping: 90,
+            },
+          }"
           class="relative isolate border-2 border-white/20 rounded-full gap-[25px] flex items-center py-[29px] pl-[30px] pr-[10px] text-[18px] before:z-[-1] transition-transform before:transition-opacity before:w-full before:h-full before:absolute before:left-0 before:bg-pink before:opacity-0 hover:before:opacity-100 before:rounded-[inherit]"
           delay="0"
           style="opacity: 1; transform: scale(1) translateZ(0px)"
@@ -36,6 +48,18 @@
           Access over 9,000 channels
         </li>
         <li
+          v-motion
+          :initial="{
+            opacity: 0,
+          }"
+          :visible="{
+            y: 0,
+            opacity: 1,
+            transition: {
+              delay: 200,
+              damping: 90,
+            },
+          }"
           class="relative isolate border-2 border-white/20 rounded-full gap-[25px] flex items-center py-[29px] pl-[30px] pr-[10px] text-[18px] before:z-[-1] transition-transform before:transition-opacity before:w-full before:h-full before:absolute before:left-0 before:bg-pink before:opacity-0 hover:before:opacity-100 before:rounded-[inherit]"
           delay="100"
           style="opacity: 1; transform: scale(1) translateZ(0px)"
@@ -55,6 +79,18 @@
           Thousands of VODs available
         </li>
         <li
+          v-motion
+          :initial="{
+            opacity: 0,
+          }"
+          :visible="{
+            y: 0,
+            opacity: 1,
+            transition: {
+              delay: 200,
+              damping: 90,
+            },
+          }"
           class="relative isolate border-2 border-white/20 rounded-full gap-[25px] flex items-center py-[29px] pl-[30px] pr-[10px] text-[18px] before:z-[-1] transition-transform before:transition-opacity before:w-full before:h-full before:absolute before:left-0 before:bg-pink before:opacity-0 hover:before:opacity-100 before:rounded-[inherit]"
           delay="200"
           style="opacity: 1; transform: scale(1) translateZ(0px)"
@@ -74,6 +110,18 @@
           Enjoy HD channels 24/7
         </li>
         <li
+          v-motion
+          :initial="{
+            opacity: 0,
+          }"
+          :visible="{
+            y: 0,
+            opacity: 1,
+            transition: {
+              delay: 200,
+              damping: 90,
+            },
+          }"
           class="relative isolate border-2 border-white/20 rounded-full gap-[25px] flex items-center py-[29px] pl-[30px] pr-[10px] text-[18px] before:z-[-1] transition-transform before:transition-opacity before:w-full before:h-full before:absolute before:left-0 before:bg-pink before:opacity-0 hover:before:opacity-100 before:rounded-[inherit]"
           delay="300"
           style="opacity: 1; transform: scale(1) translateZ(0px)"
@@ -93,6 +141,18 @@
           Automatic channel updates
         </li>
         <li
+          v-motion
+          :initial="{
+            opacity: 0,
+          }"
+          :visible="{
+            y: 0,
+            opacity: 1,
+            transition: {
+              delay: 200,
+              damping: 90,
+            },
+          }"
           class="relative isolate border-2 border-white/20 rounded-full gap-[25px] flex items-center py-[29px] pl-[30px] pr-[10px] text-[18px] before:z-[-1] transition-transform before:transition-opacity before:w-full before:h-full before:absolute before:left-0 before:bg-pink before:opacity-0 hover:before:opacity-100 before:rounded-[inherit]"
           delay="400"
           style="opacity: 1; transform: scale(1) translateZ(0px)"
@@ -112,6 +172,18 @@
           Works with all your devices
         </li>
         <li
+          v-motion
+          :initial="{
+            opacity: 0,
+          }"
+          :visible="{
+            y: 0,
+            opacity: 1,
+            transition: {
+              delay: 200,
+              damping: 90,
+            },
+          }"
           class="relative isolate border-2 border-white/20 rounded-full gap-[25px] flex items-center py-[29px] pl-[30px] pr-[10px] text-[18px] before:z-[-1] transition-transform before:transition-opacity before:w-full before:h-full before:absolute before:left-0 before:bg-pink before:opacity-0 hover:before:opacity-100 before:rounded-[inherit]"
           delay="500"
           style="opacity: 1; transform: scale(1) translateZ(0px)"
@@ -136,4 +208,8 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { useMotions } from "@vueuse/motion";
+
+const { custom } = useMotions();
+</script>
