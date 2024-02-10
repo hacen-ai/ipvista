@@ -22,9 +22,7 @@
             <p
               class="text-lg text-black/40 leading-[26px] max-w-[90%] mb-[25px]"
             >
-              Unrivaled IPTV streaming with 9,000+ channels, live sports, movies
-              &amp; TV shows. Seamless viewing on multiple devices, affordable
-              pricing.
+              {{ $t("divthbttdivfopO") }}
             </p>
           </div>
           <div

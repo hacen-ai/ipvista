@@ -209,10 +209,10 @@
         </div>
         <!--]-->
         <div class="grid gap-[15px] grid-cols-1">
-          <a
-            href="/checkout#products"
+          <NuxtLink
+            to="/checkout#products"
             class="transition-[outline,_transform] bg-green py-[19px] px-8 rounded-full font-bold text-lg shadow-btn2 text-center focus-visible:outline-2 focus-visible:outline focus-visible:outline-offset-4 outline-green grid items-center focus-visible:scale-[1.02] hover:scale-[1.02] text-white w-full"
-            >{{ $t("divfouspanFhoobto") }}</a
+            >{{ $t("divfouspanFhoobto") }}</NuxtLink
           ><!---->
         </div>
       </div>

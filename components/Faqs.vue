@@ -79,11 +79,10 @@
   </div>
 </template>
 <script setup>
-import { ref } from "vue";
-const { locale } = useI18n();
-const { t } = useI18n();
+import { ref, watch } from "vue";
+const { t, locale } = useI18n();
 
-console.log(t("FAQ"));
+console.log(t("FAQ"), locale.value);
 const faqs = ref([
   {
     id: 1,
@@ -130,12 +129,6 @@ const faqs = ref([
   },
   {
     id: 8,
-    question: t("FAQHfre"),
-    showing: false,
-    answer: t("FAQDescrse"),
-  },
-  {
-    id: 9,
     question: t("FAQHfre"),
     showing: false,
     answer: t("FAQDescrse"),

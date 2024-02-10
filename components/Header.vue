@@ -3,8 +3,8 @@
     <div
       class="[transition:_padding_.3s] container flex flex-wrap items-center max-w-[1240px] px-[20px] sm:px-4 py-[22px] md:py-[19px] justify-between mx-auto"
     >
-      <a
-        href="/"
+      <NuxtLink
+        to="/"
         class="router-link-active router-link-exact-active"
         aria-current="page"
         ><img
@@ -19,7 +19,7 @@
             https://iptvfiesta.com/_ipx/s_354x70/img/logo.svg 2x
           "
           class="object-left h-6 mr-3 sm:h-9"
-      /></a>
+      /></NuxtLink>
       <Menu as="div" class="relative ml-3">
         <MenuButton
           data-collapse-toggle="navbar-default"

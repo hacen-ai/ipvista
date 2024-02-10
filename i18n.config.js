@@ -131,7 +131,7 @@ export default defineI18nConfig(() => ({
       divfivpBtt: "Get Started Now",
       divfivpPen: "30-day money-back guarantee",
 
-      //I am here now
+      //I am here
       FAQ: "Frequently Asked Questions",
       FAQHO: "What is IPTV and how does it work?",
       FAQDesc:

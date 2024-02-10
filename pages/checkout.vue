@@ -12,7 +12,7 @@
         <p
           class="flex items-center gap-3 text-dark text-2xl font-medium before:[content:_counter(checkout-counter)] before:w-[42px] before:h-[42px] before:rounded-full before:bg-pink before:flex before:items-center before:justify-center before:text-white before:border before:border-black/10 before:[box-shadow:0_2px_2px_0_rgba(0,0,0,.06)] before:aspect-square"
         >
-          <!--[-->Choose the subscription that suits you<!--]-->
+          {{ $t("divthbttdivP") }}
         </p>
         <!--[-->
         <div
@@ -41,16 +41,16 @@
               >
                 <!---->
                 <p class="font-bold text-[30px] leading-[24px] text-webDark">
-                  1 Month Pass
+                  {{ $t("divthbttdivBoxOp") }}
                 </p>
                 <p
                   class="font-bold text-[46px] leading-[24px] text-webDarker pt-[9px] grid gap-[15px]"
                 >
-                  €9.99/mo.
+                  {{ $t("divthbttdivBoxOpTw") }}
                   <!---->
                 </p>
                 <p class="text-sm text-webDark/70">
-                  7-day money-back guarantee
+                  {{ $t("divthbttdivBoxOpTh") }}
                 </p>
               </div>
             </div>
@@ -82,21 +82,21 @@
                   }"
                   class="absolute shadow border transition-[box-shadow,_color,_background] box left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full py-[6px] w-[174px] text-lg font-medium text-dark ui-checked:bg-green ui-checked:text-white ui-checked:border-0"
                 >
-                  Save 70%
+                  {{ $t("divthbttdivBoxTwpO") }}
                 </div>
                 <p class="font-bold text-[30px] leading-[24px] text-webDark">
-                  12 Months Pass
+                  {{ $t("divthbttdivBoxTwpTw") }}
                 </p>
                 <p
                   class="font-bold text-[46px] leading-[24px] text-webDarker pt-[9px] grid gap-[15px]"
                 >
-                  €3.99/mo.
-                  <span class="block text-base font-medium text-dark/50"
-                    >Instead of €9.99 per month</span
-                  >
+                  {{ $t("divthbttdivBoxTwpTh") }}
+                  <span class="block text-base font-medium text-dark/50">{{
+                    $t("divthbttdivBoxTwpfo")
+                  }}</span>
                 </p>
                 <p class="text-sm text-webDark/70">
-                  30-day money-back guarantee
+                  {{ $t("divthbttdivBoxTwpfi") }}
                 </p>
               </div>
             </div>
@@ -128,21 +128,21 @@
                   }"
                   class="absolute shadow border transition-[box-shadow,_color,_background] box left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full py-[6px] w-[174px] text-lg font-medium text-dark ui-checked:bg-green ui-checked:text-white ui-checked:border-0"
                 >
-                  Save 40%
+                  {{ $t("divthbttdivBoxThpO") }}
                 </div>
                 <p class="font-bold text-[30px] leading-[24px] text-webDark">
-                  3 Months Pass
+                  {{ $t("divthbttdivBoxThpTw") }}
                 </p>
                 <p
                   class="font-bold text-[46px] leading-[24px] text-webDarker pt-[9px] grid gap-[15px]"
                 >
-                  €7.99/mo.
-                  <span class="block text-base font-medium text-dark/50"
-                    >Instead of €9.99 per month</span
-                  >
+                  {{ $t("divthbttdivBoxThpTh") }}
+                  <span class="block text-base font-medium text-dark/50">{{
+                    $t("divthbttdivBoxThpfo")
+                  }}</span>
                 </p>
                 <p class="text-sm text-webDark/70">
-                  30-day money-back guarantee
+                  {{ $t("divthbttdivBoxThpfi") }}
                 </p>
               </div>
             </div>
@@ -159,7 +159,7 @@
         <p
           class="flex items-center gap-3 text-dark text-2xl font-medium before:[content:_counter(checkout-counter)] before:w-[42px] before:h-[42px] before:rounded-full before:bg-pink before:flex before:items-center before:justify-center before:text-white before:border before:border-black/10 before:[box-shadow:0_2px_2px_0_rgba(0,0,0,.06)] before:aspect-square"
         >
-          <!--[-->Select your options<!--]-->
+          {{ $t("divthbttdivtwP") }}
         </p>
         <div class="grid gap-[18px]">
           <!--[-->
@@ -181,11 +181,10 @@
                 <p
                   class="transition-[color] text-[22px] leading-[24px] text-webDarker font-medium mb-2 group-focus-within:text-primary"
                 >
-                  Extra simultaneous screens
+                  {{ $t("divthbttdivtwSpanOTitle") }}
                 </p>
                 <p class="text-webDark/70 leading-[20px]">
-                  Want to share your subscription with your family or friends?
-                  Add as many simultaneous screens as you need.
+                  {{ $t("divthbttdivtwSpanODesc") }}
                 </p>
               </div>
             </div>
@@ -234,10 +233,10 @@
                 <p
                   class="transition-[color] text-[22px] leading-[24px] text-webDarker font-medium mb-2 group-focus-within:text-primary"
                 >
-                  Proxy Protection
+                  {{ $t("divthbttdivtwSpanTwTitle") }}
                 </p>
                 <p class="text-webDark/70 leading-[20px]">
-                  Built-in proxy to hide your traffic and protect your privacy
+                  {{ $t("divthbttdivtwSpanTwDesc") }}
                 </p>
               </div>
             </div>
@@ -300,7 +299,9 @@
                   <!---->
                 </div>
                 <!--[-->
-                <p class="font-medium text-dark/80 leading-[20px]">Add</p>
+                <p class="font-medium text-dark/80 leading-[20px]">
+                  {{ $t("divthbttdivtwSpanTwpThf") }}
+                </p>
                 <!--]--></button
               ><!--]-->
             </div>
@@ -316,7 +317,7 @@
         <p
           class="flex items-center gap-3 text-dark text-2xl font-medium before:[content:_counter(checkout-counter)] before:w-[42px] before:h-[42px] before:rounded-full before:bg-pink before:flex before:items-center before:justify-center before:text-white before:border before:border-black/10 before:[box-shadow:0_2px_2px_0_rgba(0,0,0,.06)] before:aspect-square"
         >
-          <!--[--><!--[-->Select your preferred payment method<!--]--><!--]-->
+          {{ $t("divthbttdivthP") }}
         </p>
         <div
           class="box mx-1 grid md:grid-cols-[63fr_45fr] md:box-unset md:gap-[30px]"
@@ -346,7 +347,7 @@
                     <label
                       class="formkit-label block font-medium text-darker/60 text-lg text-dark leading-[30px]"
                       for="input_5"
-                      >Your email address</label
+                      >{{ $t("divthbttdivthboxOp") }}</label
                     >
                     <div
                       class="formkit-inner h-[52px] relative"
@@ -378,7 +379,7 @@
                     <label
                       class="formkit-label block font-medium text-darker/60 text-lg text-dark leading-[30px]"
                       for="input_6"
-                      >Select your preferred payment method</label
+                      >{{ $t("divthbttdivthboxOEp") }}</label
                     >
                     <div
                       class="formkit-inner"
@@ -420,7 +421,7 @@
                               ></div>
                             </div>
                             <p class="leading-[30px] text-dark">
-                              Credit or Debit Card
+                              {{ $t("divthbttdivthboxOEptw") }}
                             </p>
                             <img
                               src="https://iptvfiesta.com/_ipx/s_203x30/img/checkout/gateway/Credit%20Card.svg"
@@ -461,7 +462,7 @@
                               ></div>
                             </div>
                             <p class="leading-[30px] text-dark">
-                              Crypto Currencies
+                              {{ $t("divthbttdivthboxOEpth") }}
                             </p>
                             <img
                               src="https://iptvfiesta.com/_ipx/s_203x30/img/checkout/gateway/Cryptocurrency.svg"
@@ -498,7 +499,7 @@
                         name="submit_2"
                         id="input_7"
                       >
-                        <!----><!----><!--[-->Continue
+                        <!----><!----><!--[-->{{ $t("divthbttdivthboxOEpfo") }}
                         <img
                           src="https://iptvfiesta.com/_ipx/s_24x24/img/next.svg"
                           onerror="this.setAttribute('data-error', 1)"
@@ -520,7 +521,7 @@
                         src="https://iptvfiesta.com/img/secure.svg"
                         alt="secure icon"
                       />
-                      Secure SSL Encrypted Payment
+                      {{ $t("divthbttdivthboxOEpfi") }}
                     </p>
                     <p
                       class="flex items-center justify-center gap-2.5 font-medium mb-[13px]"
@@ -529,7 +530,7 @@
                         src="https://iptvfiesta.com/img/money-back.svg"
                         alt="money back icon"
                       />
-                      7-day money-back guarantee
+                      {{ $t("divthbttdivthboxOEpsi") }}
                     </p>
                   </div>
                   <!--[--><!----><button
@@ -568,8 +569,7 @@
                     </div>
                     <!--[-->
                     <p class="opacity-70 text-dark">
-                      Stay up-to-date with exclusive offers by subscribing to
-                      our newsletter.
+                      {{ $t("divthbttdivthboxOEpse") }}
                     </p>
                     <!--]--></button
                   ><!--]-->
@@ -638,7 +638,8 @@
                         id="input_10"
                       >
                         <!----><!----><!--[--><!---->
-                        Apply<!--]--><!----><!---->
+                        {{ $t("divthbttdivthboxtwbtt")
+                        }}<!--]--><!----><!---->
                       </button>
                     </div>
                     <!---->
@@ -651,7 +652,8 @@
               class="text-dark px-[18px] pb-[21px] md:pb-7 md:pt-[14px] md:border-t md:border-dark/10 md:px-0 md:pl-[9px]"
             >
               <p class="font-medium text-[22px] mb-[18px] leading-[24px]">
-                <!--[-->Order Summary<!--]-->
+                <!--[-->{{ $t("divthbttdivthboxtwTittle")
+                }}<!--]-->
               </p>
               <div class="grid gap-[14px]">
                 <div
@@ -671,32 +673,32 @@
                 <li
                   class="relative pl-7 before:absolute before:inset-0 before:[background:url('https://iptvfiesta.com/img/checkout/check.svg')_no-repeat_center_left]"
                 >
-                  Access over 9,000 channels
+                  {{ $t("divthbttdivthboxtwaO") }}
                 </li>
                 <li
                   class="relative pl-7 before:absolute before:inset-0 before:[background:url('https://iptvfiesta.com/img/checkout/check.svg')_no-repeat_center_left]"
                 >
-                  Thousands of VODs available
+                  {{ $t("divthbttdivthboxtwatw") }}
                 </li>
                 <li
                   class="relative pl-7 before:absolute before:inset-0 before:[background:url('https://iptvfiesta.com/img/checkout/check.svg')_no-repeat_center_left]"
                 >
-                  Enjoy premium HD channels 24/7
+                  {{ $t("divthbttdivthboxtwath") }}
                 </li>
                 <li
                   class="relative pl-7 before:absolute before:inset-0 before:[background:url('https://iptvfiesta.com/img/checkout/check.svg')_no-repeat_center_left]"
                 >
-                  Automatic channel updates
+                  {{ $t("divthbttdivthboxtwafo") }}
                 </li>
                 <li
                   class="relative pl-7 before:absolute before:inset-0 before:[background:url('https://iptvfiesta.com/img/checkout/check.svg')_no-repeat_center_left]"
                 >
-                  Compatible with all your devices
+                  {{ $t("divthbttdivthboxtwafi") }}
                 </li>
                 <li
                   class="relative pl-7 before:absolute before:inset-0 before:[background:url('https://iptvfiesta.com/img/checkout/check.svg')_no-repeat_center_left]"
                 >
-                  Works seamlessly with all IPTV apps
+                  {{ $t("divthbttdivthboxtwasi") }}
                 </li>
                 <!--]-->
               </ul>
@@ -730,7 +732,7 @@
                 v-if="planSelected === 2"
                 class="grid grid-flow-col justify-between font-medium text-[22px] leading-[24px] text-dark"
               >
-                <p>Total</p>
+                <p>{{ $t("divthbttdivthboxtwasii") }}</p>
                 <p>
                   €{{ (3.99 * 12 + (proxyProtection ? 9.99 : 0)).toFixed(1) }}
                 </p>

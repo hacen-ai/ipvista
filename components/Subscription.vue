@@ -6,7 +6,8 @@
     <p
       class="flex items-center gap-3 text-dark text-2xl font-medium before:[content:_counter(checkout-counter)] before:w-[42px] before:h-[42px] before:rounded-full before:bg-pink before:flex before:items-center before:justify-center before:text-white before:border before:border-black/10 before:[box-shadow:0_2px_2px_0_rgba(0,0,0,.06)] before:aspect-square"
     >
-      <!--[-->Choose the subscription that suits you<!--]-->
+      <!--[-->{{ $t("divthbttdivP")
+      }}<!--]-->
     </p>
     <!--[-->
     <div
