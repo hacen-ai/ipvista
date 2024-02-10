@@ -82,58 +82,7 @@
 import { ref, watch } from "vue";
 const { t, locale } = useI18n();
 
-console.log(t("FAQ"), locale.value);
-const faqs = ref([
-  {
-    id: 1,
-    question: t("FAQHO"),
-    showing: false,
-    answer: t("FAQDesc"),
-  },
-  {
-    id: 2,
-
-    question: t("FAQHTw"),
-    showing: false,
-    answer: t("FAQDescTw"),
-  },
-  {
-    id: 3,
-    question: t("FAQHTh"),
-    showing: false,
-    answer: t("FAQDescTh"),
-  },
-  {
-    id: 4,
-    question: t("FAQHfo"),
-    showing: false,
-    answer: t("FAQDescfou"),
-  },
-  {
-    id: 5,
-    question: t("FAQHfi"),
-    showing: false,
-    answer: t("FAQDescffi"),
-  },
-  {
-    id: 6,
-    question: t("FAQHfsi"),
-    showing: false,
-    answer: t("FAQDescsfi"),
-  },
-  {
-    id: 7,
-    question: t("FAQHfse"),
-    showing: false,
-    answer: t("FAQDescsse"),
-  },
-  {
-    id: 8,
-    question: t("FAQHfre"),
-    showing: false,
-    answer: t("FAQDescrse"),
-  },
-]);
+const faqs = ref([]);
 
 function toggle(idx) {
   faqs.value = faqs.value.map((faq, i) => {
@@ -143,4 +92,65 @@ function toggle(idx) {
     return { ...faq, showing: false };
   });
 }
+
+watch(locale, () => {
+  // Re-initialize faqs when locale changes
+  initializeFAQs();
+});
+
+function initializeFAQs() {
+  faqs.value = [
+    {
+      id: 1,
+      question: t("FAQHO"),
+      showing: false,
+      answer: t("FAQDesc"),
+    },
+    {
+      id: 2,
+      question: t("FAQHTw"),
+      showing: false,
+      answer: t("FAQDescTw"),
+    },
+    {
+      id: 3,
+      question: t("FAQHTh"),
+      showing: false,
+      answer: t("FAQDescTh"),
+    },
+    {
+      id: 4,
+      question: t("FAQHfo"),
+      showing: false,
+      answer: t("FAQDescfou"),
+    },
+    {
+      id: 5,
+      question: t("FAQHfi"),
+      showing: false,
+      answer: t("FAQDescffi"),
+    },
+    {
+      id: 6,
+      question: t("FAQHfsi"),
+      showing: false,
+      answer: t("FAQDescsfi"),
+    },
+    {
+      id: 7,
+      question: t("FAQHfse"),
+      showing: false,
+      answer: t("FAQDescsse"),
+    },
+    {
+      id: 8,
+      question: t("FAQHfre"),
+      showing: false,
+      answer: t("FAQDescrse"),
+    },
+  ];
+}
+
+// Initialize FAQs when component mounts
+initializeFAQs();
 </script>

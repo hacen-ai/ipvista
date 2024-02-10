@@ -209,9 +209,19 @@ const selectedLang = ref("English");
 const { locale } = useI18n();
 
 onMounted(() => {
-  console.log("====================================");
-  console.log(locale.value, "en");
-  console.log("====================================");
+  if (locale.value === "en") {
+    selectedLang.value = "English";
+  } else if (locale.value === "es") {
+    selectedLang.value = "Español";
+  } else if (locale.value === "pt") {
+    selectedLang.value = "Português";
+  } else if (locale.value === "fr") {
+    selectedLang.value = "Français";
+  } else if (locale.value === "it") {
+    selectedLang.value = "Italiano";
+  } else if (locale.value === "de") {
+    selectedLang.value = "Deutsch";
+  }
 });
 
 const selectLanguageFunc = (value) => {

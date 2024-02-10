@@ -1,6 +1,6 @@
 export default defineI18nConfig(() => ({
   legacy: false,
-  locale: "de",
+  locale: ["en"],
   messages: {
     en: {
       monat: "mo",
