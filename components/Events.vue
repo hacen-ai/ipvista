@@ -21,7 +21,7 @@
         class="py-1 font-bold text-white transition-opacity opacity-50 rounded-base hover:opacity-80 outline-offset-4 line"
         aria-controls="headlessui-tabs-panel-4"
       >
-        Live Sports</button
+        {{ $t("divTwaO") }}</button
       ><button
         @click="changeTab(2)"
         id="headlessui-tabs-tab-4548162"
@@ -34,7 +34,7 @@
         class="py-1 font-bold text-white transition-opacity opacity-50 rounded-base hover:opacity-80 outline-offset-4 line"
         aria-controls="headlessui-tabs-panel-5"
       >
-        VOD</button
+        {{ $t("divTwaTw") }}</button
       ><button
         @click="changeTab(3)"
         id="headlessui-tabs-tab-4548163"
@@ -47,7 +47,7 @@
         class="py-2 font-bold text-white transition-opacity opacity-50 rounded-base hover:opacity-80 outline-offset-4 line"
         aria-controls="headlessui-tabs-panel-6"
       >
-        Biggest Events</button
+        {{ $t("divTwaTh") }}</button
       ><!--]-->
     </div>
     <div class="h-full bg-black">
@@ -88,15 +88,12 @@
               <p
                 class="text-[26px] max-w-[490px] font-black relative z-10 mb-[52px] leading-[40px] md:mb-[22px]"
               >
-                Never Miss a Moment: Stream Live Sports with Ease
+                {{ $t("divTwaOTitle") }}
               </p>
               <p
                 class="relative max-w-[490px] z-10 text-xl opacity-70 mb-[38px] md:mb-10"
               >
-                Catch your favorite games at home or on the go. Stream live
-                games from top European football championships: Premier League,
-                La Liga, Serie A, and Bundesliga, as well as major college and
-                pro leagues in the US including the NCAA®, NBA, NHL, and NFL.
+                {{ $t("divTwaODesc") }}
               </p>
               <img
                 src="https://iptvfiesta.com/_ipx/s_395x49/img/website/live-sports-channels.webp"
@@ -216,14 +213,12 @@
               <p
                 class="text-[26px] font-black relative z-10 mb-[52px] leading-[40px] md:mb-[12px] max-w-[515px]"
               >
-                Stream Unlimited Movies and TV Shows On-Demand
+                {{ $t("divTwaTwTitle") }}
               </p>
               <p
                 class="relative z-10 text-xl opacity-70 mb-[38px] md:mb-[30px] max-w-[515px]"
               >
-                Access our vast library of movies and TV shows from top studios
-                like Warner Bros.®, Disney®, Paramount®, and more, all
-                available to stream on-demand at your convenience.
+                {{ $t("divTwaTwDesc") }}
               </p>
               <img
                 src="https://iptvfiesta.com/_ipx/s_395x52/img/website/vod-channels.webp"
@@ -341,14 +336,12 @@
               <p
                 class="text-[26px] font-black relative z-10 mb-[52px] leading-[40px] max-w-[515px] md:mb-[43p]"
               >
-                Get Front-Row Access to the Biggest Entertainment Events
+                {{ $t("divTwaThTitle") }}
               </p>
               <p
                 class="relative z-10 text-xl opacity-70 mb-[38px] max-w-[515px] md:mb-[43p]"
               >
-                Spectacular, can't-miss moments like the Olympics, Grammys®,
-                Oscars®, Emmys®, and other must-see events from around the
-                world.
+                {{ $t("divTwaThDesc") }}
               </p>
               <img
                 src="https://iptvfiesta.com/_ipx/s_395x35/img/website/events-channels.webp"

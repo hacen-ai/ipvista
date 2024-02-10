@@ -15,11 +15,10 @@
         />
         <div>
           <p class="font-black text-[28px] leading-[35px] mb-[2px] lg:mb-[5px]">
-            Enjoy High Quality Live IPTV Now!
+            {{ $t("boxQualiTitle") }}
           </p>
           <p class="opacity-70 mb-[25px] lg:mb-0">
-            Get started with our IPTV service today and experience seamless
-            streaming of over 9,000 live channels from around the world.
+            {{ $t("boxQualiDescp") }}
           </p>
         </div>
         <div
@@ -28,7 +27,8 @@
           <a
             href="/checkout"
             class="transition-[outline,_transform] bg-green py-[19px] px-8 rounded-full font-bold text-lg shadow-btn2 text-center focus-visible:outline-2 focus-visible:outline focus-visible:outline-offset-4 outline-green grid items-center focus-visible:scale-[1.02] hover:scale-[1.02] py-[19px] h-[62px] leading-[1] w-full"
-            >Get Started Now</a
+          >
+            {{ $t("boxQualibtt") }}</a
           >
         </div>
       </div>

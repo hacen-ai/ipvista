@@ -6,11 +6,10 @@
       <p
         class="text-[26px] font-black leading-[36px] mb-8 text-center md:mb-[42px] lg:mb-[63px]"
       >
-        High-Quality IPTV Servers with 24/7 Uptime and Zero Buffering!
+        {{ $t("divOTitle") }}
       </p>
       <p class="opacity-70 leading-[23px] text-center mb-[39px] md:mb-[29px]">
-        Enjoy an easy-to-use and super-simple IPTV server that works on all your
-        devices.
+        {{ $t("divODesc") }}
       </p>
       <ul
         class="grid gap-[14px] md:gap-[24px_29px] md:grid-cols-2 lg:grid-cols-3"
@@ -45,7 +44,7 @@
               https://iptvfiesta.com/_ipx/s_48x48/img/website/white-check.svg 2x
             "
           />
-          Access over 9,000 channels
+          {{ $t("divObuttO") }}
         </li>
         <li
           v-motion
@@ -76,7 +75,7 @@
               https://iptvfiesta.com/_ipx/s_48x48/img/website/white-check.svg 2x
             "
           />
-          Thousands of VODs available
+          {{ $t("divObuttTw") }}
         </li>
         <li
           v-motion
@@ -107,7 +106,7 @@
               https://iptvfiesta.com/_ipx/s_48x48/img/website/white-check.svg 2x
             "
           />
-          Enjoy HD channels 24/7
+          {{ $t("divObuttTh") }}
         </li>
         <li
           v-motion
@@ -138,7 +137,7 @@
               https://iptvfiesta.com/_ipx/s_48x48/img/website/white-check.svg 2x
             "
           />
-          Automatic channel updates
+          {{ $t("divObuttFo") }}
         </li>
         <li
           v-motion
@@ -169,7 +168,7 @@
               https://iptvfiesta.com/_ipx/s_48x48/img/website/white-check.svg 2x
             "
           />
-          Works with all your devices
+          {{ $t("divObuttFi") }}
         </li>
         <li
           v-motion
@@ -200,7 +199,7 @@
               https://iptvfiesta.com/_ipx/s_48x48/img/website/white-check.svg 2x
             "
           />
-          Works with all IPTV apps
+          {{ $t("divObuttsi") }}
         </li>
         <!--]-->
       </ul>

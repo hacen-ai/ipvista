@@ -32,53 +32,57 @@
           >
             <!--[-->
             <div class="grid gap-[15px]">
-              <p class="text-lg font-bold text-dark">Help</p>
+              <p class="text-lg font-bold text-dark">
+                {{ $t("divthbttdivfoaO") }}
+              </p>
               <!--[-->
               <div class="grid gap-4">
                 <a
                   href="#"
                   class="transition-[color,_transform] origin-left text-dark/80 text-lg font-normal focus-within:text-primary focus-within:scale-105 w-max hover:text-primary hover:scale-105"
-                  >Channels list</a
+                  >{{ $t("divthbttdivfoaOpO") }}</a
                 >
               </div>
               <div class="grid gap-4">
                 <a
                   href="#"
                   class="transition-[color,_transform] origin-left text-dark/80 text-lg font-normal focus-within:text-primary focus-within:scale-105 w-max hover:text-primary hover:scale-105"
-                  >Apps</a
+                  >{{ $t("divthbttdivfoaOpTw") }}</a
                 >
               </div>
               <div class="grid gap-4">
                 <a
                   href="#"
                   class="transition-[color,_transform] origin-left text-dark/80 text-lg font-normal focus-within:text-primary focus-within:scale-105 w-max hover:text-primary hover:scale-105"
-                  >Support</a
+                  >{{ $t("divthbttdivfoaOpTh") }}</a
                 >
               </div>
               <!--]-->
             </div>
             <div class="grid gap-[15px]">
-              <p class="text-lg font-bold text-dark">Legal</p>
+              <p class="text-lg font-bold text-dark">
+                {{ $t("divthbttdivfoaTw") }}
+              </p>
               <!--[-->
               <div class="grid gap-4">
                 <a
                   href="#"
                   class="transition-[color,_transform] origin-left text-dark/80 text-lg font-normal focus-within:text-primary focus-within:scale-105 w-max hover:text-primary hover:scale-105"
-                  >Terms of Service</a
+                  >{{ $t("divthbttdivfoaTwpO") }}</a
                 >
               </div>
               <div class="grid gap-4">
                 <a
                   href="#"
                   class="transition-[color,_transform] origin-left text-dark/80 text-lg font-normal focus-within:text-primary focus-within:scale-105 w-max hover:text-primary hover:scale-105"
-                  >Privacy Policy</a
+                  >{{ $t("divthbttdivfoaTwpTw") }}</a
                 >
               </div>
               <div class="grid gap-4">
                 <a
                   href="#"
                   class="transition-[color,_transform] origin-left text-dark/80 text-lg font-normal focus-within:text-primary focus-within:scale-105 w-max hover:text-primary hover:scale-105"
-                  >DMCA</a
+                  >{{ $t("divthbttdivfoaTwpTh") }}</a
                 >
               </div>
               <!--]-->
@@ -202,12 +206,32 @@
   </footer>
 </template>
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 const selectedLang = ref("English");
+const { locale } = useI18n();
+
+onMounted(() => {
+  console.log("====================================");
+  console.log(locale.value, "en");
+  console.log("====================================");
+});
 
 const selectLanguageFunc = (value) => {
   selectedLang.value = value;
   // alert("Language changed to " + value);
+  if (selectedLang.value === "English") {
+    locale.value = "en";
+  } else if (selectedLang.value === "Español") {
+    locale.value = "es";
+  } else if (selectedLang.value === "Português") {
+    locale.value = "pt";
+  } else if (selectedLang.value === "Français") {
+    locale.value = "fr";
+  } else if (selectedLang.value === "Italiano") {
+    locale.value = "it";
+  } else if (selectedLang.value === "Deutsch") {
+    locale.value = "de";
+  }
   show.value = false;
 };
 

@@ -4,11 +4,10 @@
       <p
         class="font-black text-[26px] text-center mb-[18px] px-[22px] max-w-[677px] mx-auto"
       >
-        Don't Just Take Our Word for It - Hear From Our Happy Customers!
+        {{ $t("divfivTitle") }}
       </p>
       <p class="text-xl opacity-70 text-center px-[22px] max-w-[677px] mx-auto">
-        Here are some testimonials from our satisfied customers who have
-        experienced seamless streaming with our IPTV service.
+        {{ $t("divfivDesc") }}
       </p>
       <div
         class="py-8"
@@ -887,8 +886,8 @@
       <div
         class="px-[22px] flex gap-[19px] items-center justify-center mb-5 text-lg"
       >
-        <p class="font-bold">Excellent</p>
-        <p><strong>4.8</strong> out of 5</p>
+        <p class="font-bold">{{ $t("divfivpO") }}</p>
+        <p>{{ $t("divfivpTw") }}</p>
         <img
           src="https://iptvfiesta.com/_ipx/s_106x39/img/website/trustpilot.svg"
           onerror="this.setAttribute('data-error', 1)"
@@ -905,10 +904,10 @@
         <a
           href="/checkout"
           class="transition-[outline,_transform] bg-green py-[19px] px-8 rounded-full font-bold text-lg shadow-btn2 text-center focus-visible:outline-2 focus-visible:outline focus-visible:outline-offset-4 outline-green grid items-center focus-visible:scale-[1.02] hover:scale-[1.02] w-[350px] max-w-full mx-auto ring-offset-primary"
-          >Get Started Now</a
+          >{{ $t("divfivpBtt") }}</a
         >
         <p class="font-medium text-center text-white opacity-70">
-          30-day money-back guarantee
+          {{ $t("divfivpPen") }}
         </p>
       </div>
     </div>

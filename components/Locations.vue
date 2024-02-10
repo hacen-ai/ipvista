@@ -14,17 +14,16 @@
       />
       <div class="text-center text-white md:text-left">
         <p class="font-black text-[26px] mb-[5px] md:mb-[22px]">
-          Channels From Every Corner of the World!
+          {{ $t("divThTitle") }}
         </p>
         <p class="text-[20px] opacity-70 mb-[41px] md:mb-[27px]">
-          Enjoy a wide variety of channels from around the globe, all organized
-          and categorized for your convenience.
+          {{ $t("divThDesc") }}
         </p>
         <div class="grid justify-items-center gap-[15px] md:justify-start">
           <a
             href="/checkout"
             class="transition-[outline,_transform] bg-green py-[19px] px-8 rounded-full font-bold text-lg shadow-btn2 text-center focus-visible:outline-2 focus-visible:outline focus-visible:outline-offset-4 outline-green grid items-center focus-visible:scale-[1.02] hover:scale-[1.02] bg-white !text-primary w-[294px] max-w-full mx-auto md:mx-0 outline-white"
-            >Get your IPTV access</a
+            >{{ $t("divThBtt") }}</a
           ><!---->
         </div>
       </div>

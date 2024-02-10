@@ -93,20 +93,18 @@
         <p
           class="font-black text-[32px] mb-[58px] leading-[45px] text-[#171717] md:text-[42px] max-w-[735px] mx-auto md:mb-[23px]"
         >
-          Seamless Streaming. Unrivaled Quality
+          {{ $t("heroTitle") }}
         </p>
         <p
           class="text-[17px] mb-[30px] text-dark/70 max-w-[560px] md:text-[20px] md:mb-[32px] mx-auto"
         >
-          Experience unrivaled IPTV streaming: 9,000+ channels, live sports,
-          movies &amp; TV shows with seamless viewing on any device and
-          affordable pricing.
+          {{ $t("heroDesc") }}
         </p>
         <div class="grid justify-items-center gap-[15px] relative z-20">
           <a
             href="/checkout"
             class="transition-[outline,_transform] bg-green py-[19px] px-8 rounded-full font-bold text-lg shadow-btn2 text-center focus-visible:outline-2 focus-visible:outline focus-visible:outline-offset-4 outline-green grid items-center focus-visible:scale-[1.02] hover:scale-[1.02] bg-primary text-white w-[294px] max-w-full mx-auto focus-visible:outline-primary"
-            >Get your IPTV access</a
+            >{{ $t("heroButt") }}</a
           ><!---->
         </div>
         <img

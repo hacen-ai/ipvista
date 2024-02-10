@@ -6,33 +6,32 @@
     >
       <div class="px-[13px]">
         <p class="font-black text-[26px] text-webDark leading-[41px] mb-4">
-          Unbeatable IPTV Prices - We Dare You to Find Cheaper!
+          {{ $t("divfouTitle") }}
         </p>
         <p class="text-xl text-webBlack/70 mb-[29px]">
-          Choose the plan that fits your needs and enjoy seamless streaming of a
-          wide variety of channels and thousands of VODs.
+          {{ $t("divfouDescp") }}
         </p>
         <ul class="grid gap-[18px] content-center">
           <!--[-->
           <li
             class="font-medium text-xl text-dark pl-11 flex items-center bg-no-repeat bg-[url('https://iptvfiesta.com/img/website/green-check.svg')] bg-[size:28px_auto]"
           >
-            Access over 9,000 live channels
+            {{ $t("divfoupO") }}
           </li>
           <li
             class="font-medium text-xl text-dark pl-11 flex items-center bg-no-repeat bg-[url('https://iptvfiesta.com/img/website/green-check.svg')] bg-[size:28px_auto]"
           >
-            Enjoy zero-buffer streaming
+            {{ $t("divfoupTw") }}
           </li>
           <li
             class="font-medium text-xl text-dark pl-11 flex items-center bg-no-repeat bg-[url('https://iptvfiesta.com/img/website/green-check.svg')] bg-[size:28px_auto]"
           >
-            Simple set-up. Perfect privacy
+            {{ $t("divfoupTh") }}
           </li>
           <li
             class="font-medium text-xl text-dark pl-11 flex items-center bg-no-repeat bg-[url('https://iptvfiesta.com/img/website/green-check.svg')] bg-[size:28px_auto]"
           >
-            Money-back guarantee for peace of mind
+            {{ $t("divfoupfo") }}
           </li>
           <!--]-->
         </ul>
@@ -78,16 +77,18 @@
                   <p
                     class="font-bold text-xl leading-[24px] text-webDark flex gap-2 items-baseline mb-0.5"
                   >
-                    1 Month Pass
-                    <span class="text-lg font-medium opacity-70">Save 0%</span>
+                    {{ $t("divfouspanO") }}
+                    <span class="text-lg font-medium opacity-70"
+                      >{{ $t("divfouspanTwSave") }} 0%</span
+                    >
                   </p>
                   <p class="text-sm opacity-70 leading-[18px] mb-3 md:mb-0">
-                    Enjoy a full month of IPTV,<br />7-day money-back guarantee
+                    {{ $t("cooool") }}
                   </p>
                 </div>
                 <div class="grid [grid-auto-rows:max-content]">
                   <p class="font-bold text-xl leading-[24px] text-webDarker">
-                    9.99€/mo
+                    9.99€/{{ $t("monat") }}
                   </p>
                   <!---->
                 </div>
@@ -127,23 +128,23 @@
                   <p
                     class="font-bold text-xl leading-[24px] text-webDark flex gap-2 items-baseline mb-0.5"
                   >
-                    3 Month Pass
+                    {{ $t("divfouspanTw") }}
                     <span class="text-lg font-medium text-green opacity-70"
-                      >Save 40%</span
+                      >{{ $t("divfouspanTwSave") }} 40%</span
                     >
                   </p>
                   <p class="text-sm opacity-70 leading-[18px] mb-3 md:mb-0">
-                    Enjoy a full month of IPTV,<br />30-day money-back guarantee
+                    {{ $t("divfouspanThh") }}
                   </p>
                 </div>
                 <div class="grid [grid-auto-rows:max-content]">
                   <p class="font-bold text-xl leading-[24px] text-webDarker">
-                    7.99€/mo
+                    7.99€/{{ $t("monat") }}
                   </p>
                   <p
                     class="text-sm font-medium line-through opacity-50 text-dark md:justify-self-end"
                   >
-                    9.99€/mo
+                    9.99€/{{ $t("monat") }}
                   </p>
                 </div>
               </div>
@@ -182,23 +183,23 @@
                   <p
                     class="font-bold text-xl leading-[24px] text-webDark flex gap-2 items-baseline mb-0.5"
                   >
-                    12 Month Pass
+                    {{ $t("divfouspanTh") }}
                     <span class="text-lg font-medium text-green opacity-70"
-                      >Save 70%</span
+                      >{{ $t("divfouspanTwSave") }} 70%</span
                     >
                   </p>
                   <p class="text-sm opacity-70 leading-[18px] mb-3 md:mb-0">
-                    Enjoy a full month of IPTV,<br />30-day money-back guarantee
+                    {{ $t("divfouspanThhh") }}
                   </p>
                 </div>
                 <div class="grid [grid-auto-rows:max-content]">
                   <p class="font-bold text-xl leading-[24px] text-webDarker">
-                    3.99€/mo
+                    3.99€/{{ $t("monat") }}
                   </p>
                   <p
                     class="text-sm font-medium line-through opacity-50 text-dark md:justify-self-end"
                   >
-                    9.99€/mo
+                    9.99€/{{ $t("monat") }}
                   </p>
                 </div>
               </div>
@@ -211,7 +212,7 @@
           <a
             href="/checkout#products"
             class="transition-[outline,_transform] bg-green py-[19px] px-8 rounded-full font-bold text-lg shadow-btn2 text-center focus-visible:outline-2 focus-visible:outline focus-visible:outline-offset-4 outline-green grid items-center focus-visible:scale-[1.02] hover:scale-[1.02] text-white w-full"
-            >Get Started Now</a
+            >{{ $t("divfouspanFhoobto") }}</a
           ><!---->
         </div>
       </div>
