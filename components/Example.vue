@@ -1,49 +1,81 @@
 <template>
-  <div>
-    <select v-model="selectedOption">
-      <option v-for="(option, index) in options" :key="index" :value="option">
-        {{ option }}
-      </option>
-    </select>
-    <ul>
-      <li v-for="(faq, index) in faqs" :key="index">{{ faq }}</li>
-    </ul>
+  <div class="container">
+    <div class="tabs">
+      <button
+        v-for="(tab, index) in tabs"
+        :key="index"
+        @click="changeTab(index)"
+        :class="{ active: index === selected }"
+        class="tab-btn"
+      >
+        Tab {{ index + 1 }}
+      </button>
+    </div>
   </div>
 </template>
 
 <script setup>
-import { ref, watch } from "vue";
+import { ref, onMounted } from "vue";
 
-// Define options for dropdown
-const options = ref(["Option 1", "Option 2", "Option 3"]);
+// Number of tabs
+const numTabs = 3;
 
-// Define selected option
-const selectedOption = ref(options.value[0]);
+// Current tab
+const selected = ref(0);
 
-// Define FAQs array
-const faqs = ref([]);
+// Array to hold tabs
+const tabs = ref([...Array(numTabs).keys()].map((i) => i + 1));
 
-// Function to update FAQs based on selected option
-const updateFAQs = () => {
-  // Logic to update FAQs based on selectedOption.value
-  if (selectedOption.value === "Option 1") {
-    faqs.value = [
-      "FAQ 1 for Option 1",
-      "FAQ 2 for Option 1",
-      "FAQ 3 for Option 1",
-    ];
-  } else if (selectedOption.value === "Option 2") {
-    faqs.value = ["FAQ 1 for Option 2", "FAQ 2 for Option 2"];
-  } else if (selectedOption.value === "Option 3") {
-    faqs.value = ["FAQ 1 for Option 3"];
-  }
+// Interval ID for auto-incrementing
+let intervalId = null;
+
+// Function to change tab
+const changeTab = (index) => {
+  clearInterval(intervalId);
+  selected.value = index;
+  startAutoIncrement();
 };
 
-// Watch for changes in selectedOption and update FAQs accordingly
-watch(selectedOption, () => {
-  updateFAQs();
-});
+// Function to increment tab
+const incrementTab = () => {
+  selected.value = (selected.value % numTabs) + 1;
+};
 
-// Initial call to update FAQs when the component mounts
-updateFAQs();
+// Function to start auto-incrementing
+const startAutoIncrement = () => {
+  clearInterval(intervalId);
+  intervalId = setInterval(() => {
+    incrementTab();
+  }, 3000);
+};
+
+onMounted(() => {
+  startAutoIncrement();
+});
 </script>
+
+<style scoped>
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  background-color: #e2e8f0;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  background-color: #4a90e2;
+  color: white;
+}
+</style>

@@ -126,10 +126,10 @@
           <div
             class="grid justify-items-center gap-[15px] !justify-items-start md:!justify-items-center"
           >
-            <a
-              href=""
+            <NuxtLink
+              to="/"
               class="transition-[outline,_transform] bg-green py-[19px] px-8 rounded-full font-bold text-lg shadow-btn2 text-center focus-visible:outline-2 focus-visible:outline focus-visible:outline-offset-4 outline-green grid items-center focus-visible:scale-[1.02] hover:scale-[1.02] pt-[11px] pb-3 bg-pink text-white shadow-[0_4px_8px_0_rgba(239,24,147,.15)] outline-pink"
-              >{{ $t("navButto") }}</a
+              >{{ $t("navButto") }}</NuxtLink
             ><!---->
           </div>
         </div>

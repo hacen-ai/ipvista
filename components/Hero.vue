@@ -101,10 +101,10 @@
           {{ $t("heroDesc") }}
         </p>
         <div class="grid justify-items-center gap-[15px] relative z-20">
-          <a
-            href="/checkout"
+          <NuxtLink
+            to="/checkout"
             class="transition-[outline,_transform] bg-green py-[19px] px-8 rounded-full font-bold text-lg shadow-btn2 text-center focus-visible:outline-2 focus-visible:outline focus-visible:outline-offset-4 outline-green grid items-center focus-visible:scale-[1.02] hover:scale-[1.02] bg-primary text-white w-[294px] max-w-full mx-auto focus-visible:outline-primary"
-            >{{ $t("heroButt") }}</a
+            >{{ $t("heroButt") }}</NuxtLink
           ><!---->
         </div>
         <img

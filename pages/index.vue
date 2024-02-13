@@ -1,7 +1,7 @@
 <template>
   <div>
+    <Example />
     <Header />
-
     <Hero />
     <Features />
     <Events />
@@ -10,7 +10,6 @@
     <Reviews />
     <Faqs />
     <JoinUs />
-    <!-- <Swiper /> -->
     <Footer />
   </div>
 </template>

@@ -24,11 +24,11 @@
         <div
           class="grid justify-items-center gap-[15px] max-w-full w-[283px] mx-auto grid-cols-1"
         >
-          <a
-            href="/checkout"
-            class="transition-[outline,_transform] bg-green py-[19px] px-8 rounded-full font-bold text-lg shadow-btn2 text-center focus-visible:outline-2 focus-visible:outline focus-visible:outline-offset-4 outline-green grid items-center focus-visible:scale-[1.02] hover:scale-[1.02] py-[19px] h-[62px] leading-[1] w-full"
+          <NuxtLink
+            to="/checkout"
+            class="transition-[outline,_transform] bg-green px-8 rounded-full font-bold text-lg shadow-btn2 text-center focus-visible:outline-2 focus-visible:outline focus-visible:outline-offset-4 outline-green grid items-center focus-visible:scale-[1.02] hover:scale-[1.02] flex items-center justify-center h-[62px] leading-[1] w-full"
           >
-            {{ $t("boxQualibtt") }}</a
+            {{ $t("boxQualibtt") }}</NuxtLink
           >
         </div>
       </div>

@@ -20,7 +20,7 @@
           onMoved="onMoved"
           :options="{
             rewind: true,
-            perPage: 4,
+            perPage: 5,
 
             padding: 10,
             autoplay: true,
@@ -37,7 +37,7 @@
               768: {
                 perPage: 2,
               },
-              1024: {
+              1350: {
                 perPage: 3,
               },
               1440: {

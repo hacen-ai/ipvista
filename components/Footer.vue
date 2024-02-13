@@ -206,9 +206,20 @@
 <script setup>
 import { ref, onMounted } from "vue";
 const selectedLang = ref("English");
-const { locale } = useI18n();
+
+const { locales, locale, setLocale } = useI18n();
+
+const language = computed({
+  get: () => locale.value,
+  set: (value) => {
+    setLocale(value);
+  },
+});
 
 onMounted(() => {
+  console.log("====================================");
+  console.log(locale.value);
+  console.log("====================================");
   if (locale.value === "en") {
     selectedLang.value = "English";
   } else if (locale.value === "es") {
@@ -228,17 +239,20 @@ const selectLanguageFunc = (value) => {
   selectedLang.value = value;
   // alert("Language changed to " + value);
   if (selectedLang.value === "English") {
-    locale.value = "en";
+    locale.value = "en-US";
+    setLocale("en-US");
   } else if (selectedLang.value === "Español") {
     locale.value = "es";
   } else if (selectedLang.value === "Português") {
     locale.value = "pt";
   } else if (selectedLang.value === "Français") {
-    locale.value = "fr";
+    locale.value = "fr-FR";
+    setLocale("fr-FR");
   } else if (selectedLang.value === "Italiano") {
     locale.value = "it";
   } else if (selectedLang.value === "Deutsch") {
-    locale.value = "de";
+    locale.value = "de-DE";
+    setLocale("de-DE");
   }
   show.value = false;
 };
