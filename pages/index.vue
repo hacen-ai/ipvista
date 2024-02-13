@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Example />
     <Header />
     <Hero />
     <Features />
