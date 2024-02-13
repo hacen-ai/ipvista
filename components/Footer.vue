@@ -220,17 +220,17 @@ onMounted(() => {
   console.log("====================================");
   console.log(locale.value);
   console.log("====================================");
-  if (locale.value === "en") {
+  if (locale.value === "en-US") {
     selectedLang.value = "English";
   } else if (locale.value === "es") {
     selectedLang.value = "Español";
   } else if (locale.value === "pt") {
     selectedLang.value = "Português";
-  } else if (locale.value === "fr") {
+  } else if (locale.value === "fr-FR") {
     selectedLang.value = "Français";
   } else if (locale.value === "it") {
     selectedLang.value = "Italiano";
-  } else if (locale.value === "de") {
+  } else if (locale.value === "de-DE") {
     selectedLang.value = "Deutsch";
   }
 });
