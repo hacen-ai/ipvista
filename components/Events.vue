@@ -70,10 +70,24 @@
 
           <div
             v-if="selected === 1"
-            v-motion-fade
             class="container mx-auto max-w-[1162px] p-[141px_21px_40px_31px] md:grid grid-cols-[49fr_53fr] gap-[83px] md:pt-[207px] md:pb-[74px] items-center"
           >
-            <div class="md:pt-[5px]">
+            <div
+              class="md:pt-[5px]"
+              v-motion
+              :initial="{
+                opacity: 0,
+                x: 10,
+              }"
+              :enter="{
+                y: 0,
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 300,
+                },
+              }"
+            >
               <p
                 class="text-[26px] max-w-[490px] font-black relative z-10 mb-[52px] leading-[40px] md:mb-[22px]"
               >
@@ -96,6 +110,19 @@
             </div>
             <div class="relative">
               <img
+                v-motion
+                :initial="{
+                  opacity: 0,
+                  y: 0,
+                }"
+                :enter="{
+                  y: 10,
+
+                  opacity: 1,
+                  transition: {
+                    duration: 300,
+                  },
+                }"
                 src="https://iptvfiesta.com/_ipx/s_535x336/img/website/Packages/Live_Sports/TV.webp"
                 width="535"
                 height="336"
@@ -109,6 +136,19 @@
                 class="absolute grid gap-1 z-30 left-[18px] bottom-[-28px] w-[49%]"
               >
                 <img
+                  v-motion
+                  :initial="{
+                    opacity: 0,
+                    y: -10,
+                  }"
+                  :enter="{
+                    y: 0,
+
+                    opacity: 1,
+                    transition: {
+                      duration: 100,
+                    },
+                  }"
                   src="https://iptvfiesta.com/_ipx/s_248x33/img/website/Packages/Live_Sports/chan1.webp"
                   width="248"
                   height="33"
@@ -119,6 +159,19 @@
                   delay="300"
                   style="transform: scale(1) translateZ(0px); opacity: 1"
                 /><img
+                  v-motion
+                  :initial="{
+                    opacity: 0,
+                    y: -10,
+                  }"
+                  :enter="{
+                    y: 0,
+
+                    opacity: 1,
+                    transition: {
+                      duration: 200,
+                    },
+                  }"
                   src="https://iptvfiesta.com/_ipx/s_248x33/img/website/Packages/Live_Sports/chan2.webp"
                   width="248"
                   height="33"
@@ -129,6 +182,19 @@
                   delay="400"
                   style="transform: scale(1) translateZ(0px); opacity: 1"
                 /><img
+                  v-motion
+                  :initial="{
+                    opacity: 0,
+                    y: -10,
+                  }"
+                  :enter="{
+                    y: 0,
+
+                    opacity: 1,
+                    transition: {
+                      duration: 300,
+                    },
+                  }"
                   src="https://iptvfiesta.com/_ipx/s_248x33/img/website/Packages/Live_Sports/chan3.webp"
                   width="248"
                   height="33"
@@ -139,6 +205,19 @@
                   delay="500"
                   style="transform: scale(1) translateZ(0px); opacity: 1"
                 /><img
+                  v-motion
+                  :initial="{
+                    opacity: 0,
+                    y: -10,
+                  }"
+                  :enter="{
+                    y: 0,
+
+                    opacity: 1,
+                    transition: {
+                      duration: 400,
+                    },
+                  }"
                   src="https://iptvfiesta.com/_ipx/s_248x33/img/website/Packages/Live_Sports/chan4.webp"
                   width="248"
                   height="33"
@@ -149,6 +228,19 @@
                   delay="600"
                   style="transform: scale(1) translateZ(0px); opacity: 0.8"
                 /><img
+                  v-motion
+                  :initial="{
+                    opacity: 0,
+                    y: -10,
+                  }"
+                  :enter="{
+                    y: 0,
+
+                    opacity: 1,
+                    transition: {
+                      duration: 500,
+                    },
+                  }"
                   src="https://iptvfiesta.com/_ipx/s_248x33/img/website/Packages/Live_Sports/chan5.webp"
                   width="248"
                   height="33"
@@ -158,6 +250,19 @@
                   delay="700"
                   style="transform: scale(1) translateZ(0px); opacity: 0.6"
                 /><img
+                  v-motion
+                  :initial="{
+                    opacity: 0,
+                    y: -10,
+                  }"
+                  :enter="{
+                    y: 0,
+
+                    opacity: 1,
+                    transition: {
+                      duration: 600,
+                    },
+                  }"
                   src="https://iptvfiesta.com/_ipx/s_248x33/img/website/Packages/Live_Sports/chan6.webp"
                   width="248"
                   height="33"
@@ -170,6 +275,19 @@
                 />
               </div>
               <img
+                v-motion
+                :initial="{
+                  opacity: 0,
+                  y: 10,
+                }"
+                :enter="{
+                  y: 0,
+
+                  opacity: 1,
+                  transition: {
+                    duration: 600,
+                  },
+                }"
                 src="https://iptvfiesta.com/_ipx/s_147x266/img/website/Packages/Live_Sports/phone.webp"
                 width="147"
                 height="266"
@@ -183,10 +301,24 @@
           </div>
           <div
             v-if="selected === 2"
-            v-motion-fade
             class="container mx-auto max-w-[1162px] p-[141px_21px_40px_31px] md:grid grid-cols-[54fr_42fr] gap-[133px] md:pt-[75px] md:pb-[34px] items-center"
           >
-            <div class="md:pt-[72px]">
+            <div
+              v-motion
+              :initial="{
+                opacity: 0,
+                x: 10,
+              }"
+              :enter="{
+                y: 0,
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 300,
+                },
+              }"
+              class="md:pt-[72px]"
+            >
               <p
                 class="text-[26px] font-black relative z-10 mb-[52px] leading-[40px] md:mb-[12px] max-w-[515px]"
               >
@@ -208,6 +340,20 @@
               />
             </div>
             <div
+              v-motion
+              :initial="{
+                opacity: 0,
+                scale: 0.5,
+              }"
+              :enter="{
+                y: 0,
+                x: 0,
+                scale: 1,
+                opacity: 1,
+                transition: {
+                  duration: 500,
+                },
+              }"
               class="grid gap-[3.7%] grid-cols-3 relative z-20 justify-center justify-items-center"
             >
               <div
@@ -241,6 +387,20 @@
                 />
               </div>
               <div
+                v-motion
+                :initial="{
+                  opacity: 0,
+                  scale: 0.4,
+                }"
+                :enter="{
+                  y: 0,
+                  x: 0,
+                  scale: 1,
+                  opacity: 1,
+                  transition: {
+                    duration: 500,
+                  },
+                }"
                 class="grid gap-[17px] content-center"
                 style="transform: scale(1) translateZ(0px); opacity: 1"
               >
@@ -294,7 +454,19 @@
           </div>
           <div
             v-if="selected === 3"
-            v-motion-fade
+            v-motion
+            :initial="{
+              opacity: 0,
+              x: 20,
+            }"
+            :enter="{
+              y: 0,
+              x: 0,
+              opacity: 1,
+              transition: {
+                duration: 400,
+              },
+            }"
             class="container mx-auto max-w-[1162px] p-[141px_21px_40px_31px] md:grid grid-cols-[51fr_53fr] gap-[56px] md:pt-[212px] md:pb-[104px] items-center"
           >
             <div>
