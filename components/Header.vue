@@ -4,7 +4,7 @@
       class="[transition:_padding_.3s] container flex flex-wrap items-center max-w-[1240px] px-[20px] sm:px-4 py-[22px] md:py-[19px] justify-between mx-auto"
     >
       <NuxtLink
-        to="/"
+        :to="localPath('/')"
         class="router-link-active router-link-exact-active"
         aria-current="page"
         ><img
@@ -139,6 +139,7 @@
 </template>
 
 <script setup>
+const localPath = useLocalePath();
 import {
   Disclosure,
   DisclosureButton,

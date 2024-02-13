@@ -20,10 +20,10 @@
           {{ $t("divThDesc") }}
         </p>
         <div class="grid justify-items-center gap-[15px] md:justify-start">
-          <a
-            href="/checkout"
+          <NuxtLink
+            :to="localPath('/checkout')"
             class="transition-[outline,_transform] bg-green py-[19px] px-8 rounded-full font-bold text-lg shadow-btn2 text-center focus-visible:outline-2 focus-visible:outline focus-visible:outline-offset-4 outline-green grid items-center focus-visible:scale-[1.02] hover:scale-[1.02] bg-white !text-primary w-[294px] max-w-full mx-auto md:mx-0 outline-white"
-            >{{ $t("divThBtt") }}</a
+            >{{ $t("divThBtt") }}</NuxtLink
           ><!---->
         </div>
       </div>
@@ -31,4 +31,6 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const localPath = useLocalePath();
+</script>

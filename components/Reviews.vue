@@ -901,10 +901,10 @@
       <div
         class="grid justify-items-center gap-[15px] px-[22px] grid-cols-1 justify-center"
       >
-        <a
-          href="/checkout"
+        <NuxtLink
+          :to="localPath('/checkout')"
           class="transition-[outline,_transform] bg-green py-[19px] px-8 rounded-full font-bold text-lg shadow-btn2 text-center focus-visible:outline-2 focus-visible:outline focus-visible:outline-offset-4 outline-green grid items-center focus-visible:scale-[1.02] hover:scale-[1.02] w-[350px] max-w-full mx-auto ring-offset-primary"
-          >{{ $t("divfivpBtt") }}</a
+          >{{ $t("divfivpBtt") }}</NuxtLink
         >
         <p class="font-medium text-center text-white opacity-70">
           {{ $t("divfivpPen") }}
@@ -916,4 +916,5 @@
 
 <script setup>
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
+const localPath = useLocalePath();
 </script>
